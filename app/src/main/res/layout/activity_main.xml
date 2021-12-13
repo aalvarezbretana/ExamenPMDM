@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--
+    android:id="@+id/textView" es el identificador de este View, para poder usarlo en el código, por ejemplo
+    android:layout_width="wrap_content" el ancho se ajusta
+    android:layout_height="wrap_content" la altura se ajusta
+    android:text="Hello World!" texto dentro de este View
+    app:layout_constraintBottom_toBottomOf="parent" está enlazado su margen inferior a al pie de la pantalla
+    tools:srcCompat="@tools:sample/avatars" es la imagen seleccionada
+    android:layout_marginStart="90dp" está a 90dp de margen con la izquierda de la pantalla
+    android:layout_marginBottom="159dp" está a 159dp de margen con el pie de la pantalla
+    app:layout_constraintStart_toEndOf="@+id/imageView" su colocación está enlazada a imageView
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="63dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
