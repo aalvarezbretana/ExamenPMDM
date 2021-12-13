@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        for (i in 100..0) {
+            Log.d("Estado", i.toString())
+        }
+
     }
 
     override fun onResume() {
